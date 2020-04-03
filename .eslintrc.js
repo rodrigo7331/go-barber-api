@@ -3,9 +3,10 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ['airbnb-base'],
-  
-  
+  extends: [
+    'airbnb-base', 'prettier'
+  ],
+  plugins: ['prettier', '@typescript-eslint'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -15,19 +16,12 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: [
-    '@typescript-eslint',
-  ],
   rules: {
-    
-    "class-methods-use-this" : "off",
-    //PERMITIR FAZER ALTERAÇÃO DE PARAMETRO RECEBIDO
-    "no-param-reassign" : "off",
-    //por padrão ele quer que sigam o padrao nomeSobrenome, mas as x nao tem como evitar
-    "camelcase" : "off",
-    //REGRA QUE NAO DEIXA DECLARAR VARIAVEIS QUE NAO USA, MAS AS X A GENTE PRECISA DECLARAR
-    // A NEXT SEM ULTILIZAR, A VARIAVEL NEXT É A DOS MIDDLEWARES
-    "no-unused-vars" : ["error", {"argsIgnorPattern" : "next"}],
-    
+    "prettier/prettier": "error",
+    "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    "camelcase": "off",
+    "no-unused-vars": ["error", {"argsIgnorePattern": "next"}],
   },
 };
+

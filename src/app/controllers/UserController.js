@@ -1,6 +1,5 @@
 import User from '../models/User';
 
-
 class UserController {
   async store(req, res) {
     const userExists = await User.findOne({ where: { email: req.body.email } });
@@ -14,6 +13,5 @@ class UserController {
     return res.json({ name, email, provider });
   }
 }
-
 
 export default new UserController();
