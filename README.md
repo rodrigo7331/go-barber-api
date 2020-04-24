@@ -1,7 +1,6 @@
 ##  💻 Project
 
-  BeTheHero is a project that aims to connect people who want to make monetary 
-  contributions to NGOs (non-governmental organizations) that need help.
+  A barber scheduling app that allows users to schedule an appointment with his favorite barber and shows to the barber his       agenda for the day.
 
 ## :rocket: Technologies
 
@@ -26,7 +25,7 @@
 -  [date-fns](https://date-fns.org/)
 -  [Sentry](https://sentry.io/)
 -  [DotEnv](https://www.npmjs.com/package/dotenv)
--  [VS Code][vc] with [ESLint][vceslint]
+
 
 ## :information_source: How To Run
 
