@@ -4,7 +4,7 @@
 
 ## :rocket: Technologies
 
--  [Node.js][nodejs]
+-  [Node.js][https://nodejs.org/en/]
 -  [Express](https://expressjs.com/)
 -  [nodemon](https://nodemon.io/)
 -  [Sucrase](https://github.com/alangpierce/sucrase)
